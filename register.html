@@ -13,10 +13,15 @@
   <body>
     <div class="wrap">
       <form id="authForm">
-        <h1>Login</h1>
+        <h1>Register</h1>
 
         <div class="inputbox">
-          <input type="text" placeholder="Email" id="loginEmail" required />
+          <input type="text" placeholder="Name" id="registerName" required />
+          <i class="bx bxs-id-card"></i>
+        </div>
+
+        <div class="inputbox">
+          <input type="text" placeholder="Email" id="registerEmail" required />
           <i class="bx bxs-user-circle"></i>
         </div>
 
@@ -24,18 +29,17 @@
           <input
             type="password"
             placeholder="Password"
-            id="loginPassword"
+            id="registerPassword"
             required
           />
           <i class="bx bx-key"></i>
         </div>
 
         <div id="container">
-          <button type="submit" class="btn" id="loginButton">Login</button>
+          <button type="submit" class="btn" id="registerButton">
+            Register
+          </button>
         </div>
-
-        <p>Don't have an account?</p>
-        <a href="register.html">Register here!</a>
       </form>
     </div>
 
