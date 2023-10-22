@@ -2,8 +2,8 @@
 function fetchScores() {
   fetch("https://ets-pemrograman-web-f.cyclic.app/scores/score")
     .then((response) => response.json())
-    .then((data) => {
-      displayUsers(data.data); // Menggunakan data.data karena data utama terletak di properti "data"
+    .then(({ data }) => { // Destructuring object jadi tidak usah data.data
+      displayUsers(data); // Menggunakan data.data karena data utama terletak di properti "data"
     })
     .catch((error) => console.error("Error:", error));
 }

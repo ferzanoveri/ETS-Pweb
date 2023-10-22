@@ -25,10 +25,14 @@ body {
 .wrap {
   width: 420px;
   background: transparent;
-  border: 5px solid rgba(254, 195, 235, 0.5);
+  border: 5px solid #5372f0;
   color: rgb(84, 76, 70);
   border-radius: 10px;
   padding: 30px 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .wrap h1 {
@@ -53,14 +57,18 @@ body {
 .btn {
   width: 25%;
   height: 45px;
-  background: rgb(252, 196, 250);
-  border-radius: 40px;
+  background: #5372f0;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
   color: black;
   font-weight: 600;
   margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 input {
@@ -69,10 +77,14 @@ input {
   margin-top: 10px;
   margin-bottom: 10px;
   background: transparent;
-  border-radius: 40px;
+  border-radius: 10px;
   border: 2px solid rgb(0, 0, 0);
   size: 60px;
   padding-left: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 input::placeholder {
@@ -89,4 +101,14 @@ i {
 .btn:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 15px rgba(0,  0,  0,  0.3);
+  background-color: white;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.btn-register {
+  text-decoration: none;
 }
